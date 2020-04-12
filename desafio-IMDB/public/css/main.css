@@ -1,0 +1,340 @@
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    margin: 0;
+}
+
+.container {
+    max-width: 65vw;
+    display: block;
+    margin: 0 auto;
+}
+
+.menu {
+    height: 90vh;
+    display: flex;
+    padding: 2vh;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 212, 255, 0) 75% ),url("../img/capa-madmax2.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logo {
+    height: 5vh;
+}
+
+.menu-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.list a{
+    text-transform: uppercase;
+    text-decoration: none;
+    margin-right: 2vw;
+}
+
+.menu-nav-links a{
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.menu-nav-links a:hover {
+    color: #bc9a1d;
+}
+
+.menu-user {
+    display: flex;
+}
+
+.menu-user p {
+    color: #FFFFFF;
+    font-weight: bold;
+    margin-left: 2vh;
+} 
+
+.menu-user img{
+    height: 5vh;
+    border-radius: 30px;
+}
+
+.menu-content {
+    width: 100%;
+}
+
+.menu-content h1 {
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 5em;
+    margin: 0;
+}
+
+.menu-content-links a{
+    color: #FFFFFF;
+}
+
+.menu-content-links a:hover {
+    color: #bc9a1d;
+}
+
+.menu-content-button {
+    display: inline-block;
+    color: #000000;
+    margin: 1.5vh 0;
+    font-size: 1.2em;
+    padding: 1.5vh 4vh;
+    border-radius: 30px;
+    text-decoration: none;
+    background-color: #e4bb23;
+    position: relative;
+}
+
+.menu-content-button:hover {
+    opacity: 0.9;
+}
+
+.fa-play-circle-o {
+    position: absolute;
+    right: 0.5vw;
+    font-size: 1.4em;
+}
+
+.menu-content-paragraph {
+    font-size: 1.1em;
+}
+
+.menu-content-paragraph:first-child {
+    color: #FFFFFF;
+}
+
+.menu-content-paragraph:last-child {
+    color: #bc9a1d;
+}
+
+.catalog {
+    background-color: #f2f2f2;
+}
+
+.catalog-links {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 3vh 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.catalog-links a {
+    display: inline-block;
+    color: #e4bb23;
+    padding: 1.4vw;
+    font-weight: bold;
+}
+
+.catalog-links a:hover {
+    border-bottom: 1px solid #e4bb23;
+}
+
+.catalog-movies {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.catalog-movies li{
+    background-color: white;
+    border-radius: 14px;
+    overflow: hidden;
+    width: 23%;
+    margin: 0 1.5vh 3vh 0;
+}
+
+.catalog-movies figure {
+    position: relative;
+    margin: 0;
+}
+
+.catalog-movies img{
+    width: 100%;
+}
+
+.catalog-movies-poster {
+    top: 0;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.catalog-movies-poster p {
+    color: #e4bb23;
+    font-size: 1.4em;
+	font-weight: bold;
+	text-align: center;
+    text-transform: uppercase;
+}
+
+.catalog-movies li:hover div {
+    opacity: 1;
+}
+
+.catalog-movies li:hover {
+    transform:scale(1);
+}
+
+.fa-play {
+    font-size: 4em;
+    color: #FFFFFF;
+}
+
+.fa-play:hover {
+    color: #e4bb23;
+}
+
+.catalog-movies-description {
+    padding: 1vh;
+    display: flex;
+    max-height: 12vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.catalog-movies-description h4{
+    margin: 1vh 0;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.catalog-movies-description a{
+    margin: 0;
+    text-decoration: none;
+    color: #e4bb23;
+}
+
+.catalog-movies-description a:hover{
+    border-bottom: 1px solid #e4bb23;
+}
+
+.catalog-movies-classification {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1vh 0;
+}
+
+.catalog-movies-classification p{
+   font-size: 1.6em;
+   font-weight: bold;
+   margin: 0;
+}
+
+.fa-heart {
+    font-size: 1.4em;
+    color: #ccc;
+}
+
+.fa-heart:hover {
+    color: #ba0c0c;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icons a{
+    color: #ccc;
+    font-size: 1.8em;
+}
+
+.fa-twitter:hover {
+    color: #2790dc;
+}
+
+.fa-facebook:hover {
+    color: #144ca3;
+}
+
+.fa-instagram:hover {
+    color: #9f3c49;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        max-width: 85vw;
+    }
+
+    .catalog-movies li{
+        width: 45%;
+    }
+
+    .menu {
+        background-position: center;
+    }
+
+    .menu-nav {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #menu-nav-logo-mobile {
+        order: 1;
+    }
+
+    #menu-user-mobile{
+        order: 1;
+    }
+
+    #menu-nav-links-mobile {
+        order: 2;
+        width: 100%;
+        margin: 3vh 0;
+        justify-content: center;
+    }
+
+    .menu-content h1 {
+       font-size: 2.8em;
+    }
+
+    .catalog-links li{
+        display: flex;
+        align-items: center;
+        font-size: 0.8em;
+    }
+
+    .catalog-movies-description h4{
+        font-size: 1em;
+    }
+
+    .catalog-movies-description a{
+        font-size: 0.7em;
+    }
+
+    .catalog-movies-classification p {
+        font-size: 1.2em;
+    }
+
+    .catalog-movies-description-limit-links a:not(:nth-child(-n+2)) {
+        display: none;
+    }
+}
